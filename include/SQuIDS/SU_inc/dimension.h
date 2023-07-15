@@ -20,7 +20,7 @@
  *      Christopher Weaver (University of Wisconsin Madison)                   * 
  *         cweaver@icecube.wisc.edu                                            *
  ******************************************************************************/
-#define SQUIDS_MAX_HILBERT_DIM 6
-#define SQUIDS_MAX_HILBERT_SIZE 36
-#define SQUIDS_MAX_HILBERT_DIM_STR "6"
-#define SQUIDS_MAX_HILBERT_SIZE_STR "36"
+#define SQUIDS_MAX_HILBERT_DIM 9
+#define SQUIDS_MAX_HILBERT_SIZE 81
+#define SQUIDS_MAX_HILBERT_DIM_STR "9"
+#define SQUIDS_MAX_HILBERT_SIZE_STR "81"

@@ -1,0 +1,85 @@
+ /******************************************************************************
+ *    This program is free software: you can redistribute it and/or modify     *
+ *   it under the terms of the GNU General Public License as published by      *
+ *   the Free Software Foundation, either version 3 of the License, or         *
+ *   (at your option) any later version.                                       *
+ *                                                                             *
+ *   This program is distributed in the hope that it will be useful,           *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of            *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             *
+ *   GNU General Public License for more details.                              *
+ *                                                                             *
+ *   You should have received a copy of the GNU General Public License         *
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
+ *                                                                             *   
+ *   Authors:                                                                  *
+ *      Carlos Arguelles (University of Wisconsin Madison)                     * 
+ *         carguelles@icecube.wisc.edu                                         *
+ *      Jordi Salvado (University of Wisconsin Madison)                        *
+ *         jsalvado@icecube.wisc.edu                                           *
+ *      Christopher Weaver (University of Wisconsin Madison)                   * 
+ *         cweaver@icecube.wisc.edu                                            *
+ ******************************************************************************/
+term=2*t*suv1.components[8];
+SX[0]=sin(term);
+CX[0]=cos(term);
+term=t*(suv1.components[8] + sqrt(3)*suv1.components[16]);
+SX[1]=sin(term);
+CX[1]=cos(term);
+term=t*suv1.components[8] + (t*(suv1.components[16] + 2*sqrt(2)*suv1.components[24]))/sqrt(3);
+SX[2]=sin(term);
+CX[2]=cos(term);
+term=t*suv1.components[8] + (t*suv1.components[16])/sqrt(3) + (t*suv1.components[24])/sqrt(6) + sqrt(2.5)*t*suv1.components[32];
+SX[3]=sin(term);
+CX[3]=cos(term);
+term=t*suv1.components[8] + (t*suv1.components[16])/sqrt(3) + (t*suv1.components[24])/sqrt(6) + (t*suv1.components[32])/sqrt(10) + 2*sqrt(0.6)*t*suv1.components[40];
+SX[4]=sin(term);
+CX[4]=cos(term);
+term=t*suv1.components[8] + (t*suv1.components[16])/sqrt(3) + (t*suv1.components[24])/sqrt(6) + (t*suv1.components[32])/sqrt(10) + (t*suv1.components[40])/sqrt(15) + sqrt(2.3333333333333335)*t*suv1.components[48];
+SX[5]=sin(term);
+CX[5]=cos(term);
+term=t*(suv1.components[8] - sqrt(3)*suv1.components[16]);
+SX[6]=sin(term);
+CX[6]=cos(term);
+term=t*suv1.components[8] - (t*(suv1.components[16] + 2*sqrt(2)*suv1.components[24]))/sqrt(3);
+SX[7]=sin(term);
+CX[7]=cos(term);
+term=t*suv1.components[8] - (t*(2*sqrt(3)*suv1.components[16] + sqrt(6)*suv1.components[24] + 3*sqrt(10)*suv1.components[32]))/6.;
+SX[8]=sin(term);
+CX[8]=cos(term);
+term=t*suv1.components[8] - (t*(10*sqrt(3)*suv1.components[16] + 5*sqrt(6)*suv1.components[24] + 3*sqrt(10)*suv1.components[32] + 12*sqrt(15)*suv1.components[40]))/30.;
+SX[9]=sin(term);
+CX[9]=cos(term);
+term=t*suv1.components[8] - (t*(10*sqrt(3)*suv1.components[16] + 5*sqrt(6)*suv1.components[24] + 3*sqrt(10)*suv1.components[32] + 2*sqrt(15)*suv1.components[40] + 10*sqrt(21)*suv1.components[48]))/30.;
+SX[10]=sin(term);
+CX[10]=cos(term);
+term=(2*t*(suv1.components[16] - sqrt(2)*suv1.components[24]))/sqrt(3);
+SX[11]=sin(term);
+CX[11]=cos(term);
+term=(t*(4*sqrt(3)*suv1.components[16] - sqrt(6)*suv1.components[24] - 3*sqrt(10)*suv1.components[32]))/6.;
+SX[12]=sin(term);
+CX[12]=cos(term);
+term=(2*t*suv1.components[16])/sqrt(3) - (t*suv1.components[24])/sqrt(6) - (t*suv1.components[32])/sqrt(10) - 2*sqrt(0.6)*t*suv1.components[40];
+SX[13]=sin(term);
+CX[13]=cos(term);
+term=(t*(20*sqrt(3)*suv1.components[16] - 5*sqrt(6)*suv1.components[24] - 3*sqrt(10)*suv1.components[32] - 2*sqrt(15)*suv1.components[40] - 10*sqrt(21)*suv1.components[48]))/30.;
+SX[14]=sin(term);
+CX[14]=cos(term);
+term=sqrt(1.5)*t*suv1.components[24] - sqrt(2.5)*t*suv1.components[32];
+SX[15]=sin(term);
+CX[15]=cos(term);
+term=sqrt(1.5)*t*suv1.components[24] - (t*suv1.components[32])/sqrt(10) - 2*sqrt(0.6)*t*suv1.components[40];
+SX[16]=sin(term);
+CX[16]=cos(term);
+term=sqrt(1.5)*t*suv1.components[24] - (t*suv1.components[32])/sqrt(10) - (t*suv1.components[40])/sqrt(15) - sqrt(2.3333333333333335)*t*suv1.components[48];
+SX[17]=sin(term);
+CX[17]=cos(term);
+term=2*sqrt(0.4)*t*suv1.components[32] - 2*sqrt(0.6)*t*suv1.components[40];
+SX[18]=sin(term);
+CX[18]=cos(term);
+term=2*sqrt(0.4)*t*suv1.components[32] - (t*suv1.components[40])/sqrt(15) - sqrt(2.3333333333333335)*t*suv1.components[48];
+SX[19]=sin(term);
+CX[19]=cos(term);
+term=sqrt(1.6666666666666667)*t*suv1.components[40] - sqrt(2.3333333333333335)*t*suv1.components[48];
+SX[20]=sin(term);
+CX[20]=cos(term);

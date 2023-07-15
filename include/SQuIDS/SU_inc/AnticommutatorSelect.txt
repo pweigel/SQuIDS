@@ -36,6 +36,15 @@ switch (suv_new.dim){
   case 6: 
     #include "AnticonmutatorSU6.txt"
     break;
+  case 7: 
+    #include "AnticonmutatorSU7.txt"
+    break;
+  case 8: 
+    #include "AnticonmutatorSU8.txt"
+    break;
+  case 9: 
+    #include "AnticonmutatorSU9.txt"
+    break;
   default:
-    throw std::runtime_error("SU_vector Anticommutator Error: Dimension out of range");
+    throw std::runtime_error("SU_vector Anticommutator Error: Only dimensions up to " SQUIDS_MAX_HILBERT_DIM_STR " are supported");
 }

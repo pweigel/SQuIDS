@@ -30,7 +30,7 @@
 (suv_rot) . components[7]+=(3*(3 + cos(2*th))*suv.components[7] + 6*sin(2*th)*(cos(del)*suv.components[10] + sin(del)*suv.components[25]) + sin(th)*sin(th)*(2*sqrt(3)*suv.components[14] + sqrt(6)*suv.components[21] + 3*sqrt(10)*suv.components[28]))/12.;
 (suv_rot) . components[8]+=cos(th)*suv.components[8] - sin(th)*(cos(del)*suv.components[16] + sin(del)*suv.components[26]);
 (suv_rot) . components[9]+=cos(th)*suv.components[9] - sin(th)*(cos(del)*suv.components[22] + sin(del)*suv.components[27]);
-(suv_rot) . components[10]+=(6*(cos(del)*cos(del)*cos(2*th) + sin(del)*sin(del))*suv.components[10] + cos(del)*sin(th)*(-12*sin(del)*sin(th)*suv.components[25] + cos(th)*(-6*suv.components[7] + 2*sqrt(3)*suv.components[14] + sqrt(6)*suv.components[21] + 3*sqrt(10)*suv.components[28])))/6.;
+(suv_rot) . components[10]+=(cos(del)*cos(del)*cos(2*th) + sin(del)*sin(del))*suv.components[10] + (cos(del)*sin(th)*(-12*sin(del)*sin(th)*suv.components[25] + cos(th)*(-6*suv.components[7] + 2*sqrt(3)*suv.components[14] + sqrt(6)*suv.components[21] + 3*sqrt(10)*suv.components[28])))/6.;
 (suv_rot) . components[11]+=cos(th)*suv.components[11] + sin(th)*(-(cos(del)*suv.components[29]) + sin(del)*suv.components[34]);
 (suv_rot) . components[12]+=suv.components[12];
 (suv_rot) . components[13]+=cos(th)*suv.components[13] + sin(th)*(-(sin(del)*suv.components[16]) + cos(del)*suv.components[26]);
@@ -45,7 +45,7 @@
 (suv_rot) . components[22]+=cos(del)*sin(th)*suv.components[9] + sin(del)*sin(th)*suv.components[19] + cos(th)*suv.components[22];
 (suv_rot) . components[23]+=suv.components[23];
 (suv_rot) . components[24]+=sin(del)*sin(th)*suv.components[1] + cos(del)*sin(th)*suv.components[6] + cos(th)*suv.components[24];
-(suv_rot) . components[25]+=-(sin(2*del)*sin(th)*sin(th)*suv.components[10]) + cos(th)*cos(th)*suv.components[25] + cos(2*del)*sin(th)*sin(th)*suv.components[25] + (cos(th)*sin(del)*sin(th)*(-6*suv.components[7] + 2*sqrt(3)*suv.components[14] + sqrt(6)*suv.components[21] + 3*sqrt(10)*suv.components[28]))/6.;
+(suv_rot) . components[25]+=-(cos(th)*sin(del)*sin(th)*suv.components[7]) - 2*cos(del)*sin(del)*sin(th)*sin(th)*suv.components[10] + (cos(del)*cos(del) + cos(2*th)*sin(del)*sin(del))*suv.components[25] + (cos(th)*sin(del)*sin(th)*(2*sqrt(3)*suv.components[14] + sqrt(6)*suv.components[21] + 3*sqrt(10)*suv.components[28]))/6.;
 (suv_rot) . components[26]+=sin(del)*sin(th)*suv.components[8] - cos(del)*sin(th)*suv.components[13] + cos(th)*suv.components[26];
 (suv_rot) . components[27]+=sin(del)*sin(th)*suv.components[9] - cos(del)*sin(th)*suv.components[19] + cos(th)*suv.components[27];
 (suv_rot) . components[28]+=(10*sin(th)*sin(th)*(6*suv.components[7] - 2*sqrt(3)*suv.components[14] - sqrt(6)*suv.components[21]) - 60*sin(2*th)*(cos(del)*suv.components[10] + sin(del)*suv.components[25]) + 3*sqrt(10)*(3 + 5*cos(2*th))*suv.components[28])/(24.*sqrt(10));

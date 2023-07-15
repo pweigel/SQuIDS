@@ -17,8 +17,9 @@
  *         carguelles@icecube.wisc.edu                                         *
  *      Jordi Salvado (University of Wisconsin Madison)                        *
  *         jsalvado@icecube.wisc.edu                                           *
+ *      Christopher Weaver (University of Wisconsin Madison)                   * 
+ *         cweaver@icecube.wisc.edu                                            *
  ******************************************************************************/
-
 (suv_rot) . components[0]+=suv.components[0];
 (suv_rot) . components[1]+=cos(th)*suv.components[1] - sin(th)*(cos(del)*suv.components[6] + sin(del)*suv.components[9]);
 (suv_rot) . components[2]+=(cos(th)*cos(th) - cos(2*del)*sin(th)*sin(th))*suv.components[2] + cos(del)*sin(th)*(-2*sin(del)*sin(th)*suv.components[8] + cos(th)*(suv.components[5] + sqrt(3)*suv.components[10]));

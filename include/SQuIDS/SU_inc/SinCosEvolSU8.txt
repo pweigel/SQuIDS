@@ -1,0 +1,86 @@
+ /******************************************************************************
+ *    This program is free software: you can redistribute it and/or modify     *
+ *   it under the terms of the GNU General Public License as published by      *
+ *   the Free Software Foundation, either version 3 of the License, or         *
+ *   (at your option) any later version.                                       *
+ *                                                                             *
+ *   This program is distributed in the hope that it will be useful,           *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of            *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             *
+ *   GNU General Public License for more details.                              *
+ *                                                                             *
+ *   You should have received a copy of the GNU General Public License         *
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
+ *                                                                             *   
+ *   Authors:                                                                  *
+ *      Carlos Arguelles (University of Wisconsin Madison)                     * 
+ *         carguelles@icecube.wisc.edu                                         *
+ *      Jordi Salvado (University of Wisconsin Madison)                        *
+ *         jsalvado@icecube.wisc.edu                                           *
+ *      Christopher Weaver (University of Wisconsin Madison)                   * 
+ *         cweaver@icecube.wisc.edu                                            *
+ ******************************************************************************/
+suv3.components[0]+=suv2.components[0];
+suv3.components[1]+=CX[0]*suv2.components[1] + suv2.components[8]*SX[0];
+suv3.components[2]+=CX[1]*suv2.components[2] + suv2.components[16]*SX[1];
+suv3.components[3]+=CX[2]*suv2.components[3] + suv2.components[24]*SX[2];
+suv3.components[4]+=CX[3]*suv2.components[4] + suv2.components[32]*SX[3];
+suv3.components[5]+=CX[4]*suv2.components[5] + suv2.components[40]*SX[4];
+suv3.components[6]+=CX[5]*suv2.components[6] + suv2.components[48]*SX[5];
+suv3.components[7]+=CX[6]*suv2.components[7] + suv2.components[56]*SX[6];
+suv3.components[8]+=CX[0]*suv2.components[8] - suv2.components[1]*SX[0];
+suv3.components[9]+=suv2.components[9];
+suv3.components[10]+=CX[7]*suv2.components[10] - suv2.components[17]*SX[7];
+suv3.components[11]+=CX[8]*suv2.components[11] - suv2.components[25]*SX[8];
+suv3.components[12]+=CX[9]*suv2.components[12] - suv2.components[33]*SX[9];
+suv3.components[13]+=CX[10]*suv2.components[13] - suv2.components[41]*SX[10];
+suv3.components[14]+=CX[11]*suv2.components[14] - suv2.components[49]*SX[11];
+suv3.components[15]+=CX[12]*suv2.components[15] - suv2.components[57]*SX[12];
+suv3.components[16]+=CX[1]*suv2.components[16] - suv2.components[2]*SX[1];
+suv3.components[17]+=CX[7]*suv2.components[17] + suv2.components[10]*SX[7];
+suv3.components[18]+=suv2.components[18];
+suv3.components[19]+=CX[13]*suv2.components[19] - suv2.components[26]*SX[13];
+suv3.components[20]+=CX[14]*suv2.components[20] - suv2.components[34]*SX[14];
+suv3.components[21]+=CX[15]*suv2.components[21] - suv2.components[42]*SX[15];
+suv3.components[22]+=CX[16]*suv2.components[22] - suv2.components[50]*SX[16];
+suv3.components[23]+=CX[17]*suv2.components[23] - suv2.components[58]*SX[17];
+suv3.components[24]+=CX[2]*suv2.components[24] - suv2.components[3]*SX[2];
+suv3.components[25]+=CX[8]*suv2.components[25] + suv2.components[11]*SX[8];
+suv3.components[26]+=CX[13]*suv2.components[26] + suv2.components[19]*SX[13];
+suv3.components[27]+=suv2.components[27];
+suv3.components[28]+=CX[18]*suv2.components[28] - suv2.components[35]*SX[18];
+suv3.components[29]+=CX[19]*suv2.components[29] - suv2.components[43]*SX[19];
+suv3.components[30]+=CX[20]*suv2.components[30] - suv2.components[51]*SX[20];
+suv3.components[31]+=CX[21]*suv2.components[31] - suv2.components[59]*SX[21];
+suv3.components[32]+=CX[3]*suv2.components[32] - suv2.components[4]*SX[3];
+suv3.components[33]+=CX[9]*suv2.components[33] + suv2.components[12]*SX[9];
+suv3.components[34]+=CX[14]*suv2.components[34] + suv2.components[20]*SX[14];
+suv3.components[35]+=CX[18]*suv2.components[35] + suv2.components[28]*SX[18];
+suv3.components[36]+=suv2.components[36];
+suv3.components[37]+=CX[22]*suv2.components[37] - suv2.components[44]*SX[22];
+suv3.components[38]+=CX[23]*suv2.components[38] - suv2.components[52]*SX[23];
+suv3.components[39]+=CX[24]*suv2.components[39] - suv2.components[60]*SX[24];
+suv3.components[40]+=CX[4]*suv2.components[40] - suv2.components[5]*SX[4];
+suv3.components[41]+=CX[10]*suv2.components[41] + suv2.components[13]*SX[10];
+suv3.components[42]+=CX[15]*suv2.components[42] + suv2.components[21]*SX[15];
+suv3.components[43]+=CX[19]*suv2.components[43] + suv2.components[29]*SX[19];
+suv3.components[44]+=CX[22]*suv2.components[44] + suv2.components[37]*SX[22];
+suv3.components[45]+=suv2.components[45];
+suv3.components[46]+=CX[25]*suv2.components[46] - suv2.components[53]*SX[25];
+suv3.components[47]+=CX[26]*suv2.components[47] - suv2.components[61]*SX[26];
+suv3.components[48]+=CX[5]*suv2.components[48] - suv2.components[6]*SX[5];
+suv3.components[49]+=CX[11]*suv2.components[49] + suv2.components[14]*SX[11];
+suv3.components[50]+=CX[16]*suv2.components[50] + suv2.components[22]*SX[16];
+suv3.components[51]+=CX[20]*suv2.components[51] + suv2.components[30]*SX[20];
+suv3.components[52]+=CX[23]*suv2.components[52] + suv2.components[38]*SX[23];
+suv3.components[53]+=CX[25]*suv2.components[53] + suv2.components[46]*SX[25];
+suv3.components[54]+=suv2.components[54];
+suv3.components[55]+=CX[27]*suv2.components[55] - suv2.components[62]*SX[27];
+suv3.components[56]+=CX[6]*suv2.components[56] - suv2.components[7]*SX[6];
+suv3.components[57]+=CX[12]*suv2.components[57] + suv2.components[15]*SX[12];
+suv3.components[58]+=CX[17]*suv2.components[58] + suv2.components[23]*SX[17];
+suv3.components[59]+=CX[21]*suv2.components[59] + suv2.components[31]*SX[21];
+suv3.components[60]+=CX[24]*suv2.components[60] + suv2.components[39]*SX[24];
+suv3.components[61]+=CX[26]*suv2.components[61] + suv2.components[47]*SX[26];
+suv3.components[62]+=CX[27]*suv2.components[62] + suv2.components[55]*SX[27];
+suv3.components[63]+=suv2.components[63];

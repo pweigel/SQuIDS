@@ -17,8 +17,9 @@
  *         carguelles@icecube.wisc.edu                                         *
  *      Jordi Salvado (University of Wisconsin Madison)                        *
  *         jsalvado@icecube.wisc.edu                                           *
+ *      Christopher Weaver (University of Wisconsin Madison)                   * 
+ *         cweaver@icecube.wisc.edu                                            *
  ******************************************************************************/
-
 (suv_rot) . components[0]+=suv.components[0];
 (suv_rot) . components[1]+=cos(th)*suv.components[1] - sin(th)*(cos(del)*suv.components[2] + sin(del)*suv.components[10]);
 (suv_rot) . components[2]+=cos(del)*sin(th)*suv.components[1] + cos(th)*suv.components[2] - sin(del)*sin(th)*suv.components[5];
@@ -30,7 +31,7 @@
 (suv_rot) . components[8]+=cos(th)*suv.components[8] + sin(th)*(-(cos(del)*suv.components[13]) + sin(del)*suv.components[17]);
 (suv_rot) . components[9]+=cos(th)*suv.components[9] + sin(th)*(-(cos(del)*suv.components[14]) + sin(del)*suv.components[22]);
 (suv_rot) . components[10]+=sin(del)*sin(th)*suv.components[1] + cos(del)*sin(th)*suv.components[5] + cos(th)*suv.components[10];
-(suv_rot) . components[11]+=(-2*sin(2*del)*sin(th)*sin(th)*suv.components[7] + 2*(cos(th)*cos(th) + cos(2*del)*sin(th)*sin(th))*suv.components[11] + sin(del)*sin(2*th)*(-suv.components[6] + sqrt(3)*suv.components[12]))/2.;
+(suv_rot) . components[11]+=(cos(th)*cos(th) + cos(2*del)*sin(th)*sin(th))*suv.components[11] - sin(th)*(sin(2*del)*sin(th)*suv.components[7] + cos(th)*sin(del)*(suv.components[6] - sqrt(3)*suv.components[12]));
 (suv_rot) . components[12]+=(2*sqrt(3)*sin(th)*sin(th)*suv.components[6] - 2*sqrt(3)*sin(2*th)*(cos(del)*suv.components[7] + sin(del)*suv.components[11]) + (1 + 3*cos(2*th))*suv.components[12])/4.;
 (suv_rot) . components[13]+=cos(del)*sin(th)*suv.components[8] + cos(th)*suv.components[13] + sin(del)*sin(th)*suv.components[16];
 (suv_rot) . components[14]+=cos(del)*sin(th)*suv.components[9] + cos(th)*suv.components[14] + sin(del)*sin(th)*suv.components[21];
