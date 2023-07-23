@@ -406,7 +406,7 @@ void gsl_matrix_complex_change_basis_IUCMU(gsl_matrix_complex* U, gsl_matrix_com
 
   gsl_blas_zgemm(CblasNoTrans,CblasConjTrans,
                  gsl_complex_rect(1.0,0.0),M,
-		 U1,gsl_complex_rect(0.0,0.0),T1);
+		             U1,gsl_complex_rect(0.0,0.0),T1);
   gsl_blas_zgemm(CblasNoTrans,CblasNoTrans,
                  gsl_complex_rect(1.0,0.0),U2,
                  T1,gsl_complex_rect(0.0,0.0),M);
@@ -589,6 +589,13 @@ SU_vector SU_vector::Rotate(unsigned int ii, unsigned int jj, double th, double 
 #include <SQuIDS/SU_inc/rotation_switcher.h>
 
   return suv_rot;
+}
+
+void SU_vector::RotateWithMatrix(gsl_matrix_complex* U){
+  SU_vector suv_rot = make_aligned(dim);
+  suv_rot=*this;
+  suv_rot=suv_rot.Rotate(U);
+  *this=suv_rot;
 }
 
 void SU_vector::RotateToB0(const Const& param){

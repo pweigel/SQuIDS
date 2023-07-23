@@ -372,6 +372,8 @@ public:
   ///\brief Returns a rotated SU_vector rotating by the matrix m.
   ///\param rotation_matrix gsl_complex_matrix which rotates to
   SU_vector Rotate(const gsl_matrix_complex* rotation_matrix) const;
+  // SU_vector RotateVector(const gsl_matrix_complex* rotation_matrix) const;
+  void RotateWithMatrix(gsl_matrix_complex* rotation_matrix);
 
   ///\brief Returns a rotated SU_vector with a rotation in the ij-subspace
   ///\param i subspace index
@@ -416,7 +418,7 @@ public:
   ///\brief Applies unitary transformation given by the complex matrix em
   /// em^\dagger*v*em where Op is represented by v.
   SU_vector UDaggerTransform(gsl_matrix_complex* em) const;
-
+  SU_vector RotationTransformation(gsl_matrix_complex* U) const;
   ///\brief It returns as a SU_vector the complex part of the corresponding complex matrix represantation
   SU_vector Imag(void) const;
   ///\brief It returns as a SU_vectorthe real part of the corresponding complex matrix represantation
